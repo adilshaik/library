@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Adding Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Library</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" target="_blank" href="https://www.linkedin.com/in/shaik-adil-7497a01b1/">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input  id="searchBtn" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- DIV FOR ADDING ALERT -->
+    <div id="message"></div>
+    <!-- Adding Form -->
+    <div class="container">
+        <h1 class="text-center my-3">Welcome to the library</h1>
+        <form id="libraryForm" style="border: 1px solid rgb(194, 191, 191); border-radius: 10px; padding: 20px 20px;">
+            <div class="row mb-3">
+              <label for="bookName" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="bookName">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="author" class="col-sm-2 col-form-label">Author</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="author">
+              </div>
+            </div>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="scifi" value="Sci-Fi" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Sci-Fi
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="programming" value="Programming">
+                  <label class="form-check-label" for="gridRadios2">
+                    Programming
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="mystery" value="Mystery">
+                  <label class="form-check-label" for="gridRadios3">
+                    Mystery
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Add a book</button>
+          </form>
+          <h1 class="my-3">Your Books</h1>
+          <div id="table" class="container-fluid">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Delete Book</th>
+                  </tr>
+                </thead>
+                <tbody id="tableContent"></tbody>
+              </table>
+          </div>
+
+    </div>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/indexEs6.js"></script>
+    <!-- BOOTSTRAP CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

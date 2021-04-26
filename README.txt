@@ -1,0 +1,1 @@
+Our library is a library where we can add name of the book, author and type of the book. I've used prototype inheritance as well as ES6 inheritance in JavaScript. Kindly use "indexEs6.js", as it contains more features.  
